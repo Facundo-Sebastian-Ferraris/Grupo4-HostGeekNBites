@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const ip = '172.16.100.172';
+// const ip = 'localhost';
 const puerto = '3030';
 
 const path = require('path');
@@ -14,6 +15,8 @@ console.log('Static path:', staticPath);
 if (!fs.existsSync(staticPath)) {
     console.error('Directory does not exist:', staticPath);
     process.exit(1);
+} else {
+    console.log('directory exists!');
 }
 
 // Check if index.html exists
@@ -21,6 +24,8 @@ const indexPath = path.join(staticPath, '/HTML/index.html');
 if (!fs.existsSync(indexPath)) {
     console.error('index.html does not exist:', indexPath);
     process.exit(1);
+}else {
+    console.log('index exists!');
 }
 
 // Serve static files from the Proyecto-Tienda directory
