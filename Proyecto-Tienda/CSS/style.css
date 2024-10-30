@@ -1,0 +1,47 @@
+.cartel{
+    height: clamp(800px,100vh, 2000px);
+    /* overflow es un atributo que indica que se debe hacer cuando un elemento rebasa el div. 
+    En este caso lo escondemos por dentro la parte sobrante*/
+    overflow: hidden; 
+    /* la posicion relativa define en donde se ubicara teniendo como referencia
+    asi mismo.*/
+    /* position: relative; */
+    display: grid;
+    grid-template: 1fr 1fr / repeat(5,1fr);
+    justify-content: center;
+}
+
+/* las clases productos que estan contenidos en cartel deben tener: */
+.cartel .producto {
+    /* background-color: violet; */
+    width: 60%;
+    height: 100%;
+    /* position: absolute; */
+    /* z-index es para encimar elementos por sobre otros, cuanto mas grande, mas encimadi */
+    z-index: 1; 
+    transition: 0.5s;
+    --izquierda: 20%
+}
+
+.cartel .producto .lata {
+    background: 
+        var(--etiqueta) var(--izquierda) 0,
+        url("../assets/PerkCans/lata.png");
+
+    background-size: auto 100%;
+    background-blend-mode: multiply;
+    mask-image: url("../assets/PerkCans/lata.png");
+
+    width: 100;
+    aspect-ratio: 1/2;
+
+    /* Aplicación del mascarado */
+    mask-size: auto 100%; /* Ajustamos el tamaño del mask */
+    mask-position: center; /* Centramos el mask */
+    mask-repeat: no-repeat; /* No repetir el mask */
+    transition: 0.5s;
+}
+
+.producto .lata:hover{
+    --izquierda: 75%
+}

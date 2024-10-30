@@ -1,0 +1,7 @@
+[
+    {"creditos":{"img":{"src":"../assets/facu.png"},"p":{"class":"credito","nombre":"FERRARIS FACUNDO"},"style":"--x:1; --y:2"}},
+    {"creditos":{"img":{"src":"../assets/toni.png"},"p":{"class":"credito","nombre":"SARMIENTO ANTONIO"},"style":"--x:3; --y:2"}},
+    {"creditos":{"img":{"src":"../assets/albany.png"},"p":{"class":"credito","nombre":"PETIT ALBANY"},"style":"--x:1; --y:4"}},
+    {"creditos":{"img":{"src":"../assets/sthefy.png"},"p":{"class":"credito","nombre":"CEDEÑO STHEFANY"},"style":"--x:3; --y:4"}}
+]
+

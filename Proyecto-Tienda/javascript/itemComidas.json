@@ -1,0 +1,20 @@
+[
+
+    { "frente": {"class": "front1", "contenido": { "h3": {"class": "card__title", "descripcion": "BatBurger"}, "p": {"class": "card__sub", "descripcion": "Time for a"} } } , "reverso": {"class": "back", "contenido": { "p": { "class": "card__body", "descripcion": "Deliciosa hamburguesa con pan de la casa, carne, queso cheddar, cebolla, tomate, lechuga y salsa Sweet Bat"} } }, "url": "../assets/hamburguesa2.png"},
+    
+    { "frente": {"class": "front2", "contenido": { "h3": {"class": "card__title", "descripcion": "PizzaSmash"}, "p": {"class": "card__sub", "descripcion": "Time for a"} } } , "reverso": {"class": "back", "contenido": { "p": { "class": "card__body", "descripcion": "Deliciosa combinación de salsa de tomate fresca, mozzarella derretida y albahaca fresca, todo sobre una crujiente base artesanal"} } }, "url": "../assets/pizza2.png" },
+    
+    { "frente": {"class": "front3", "contenido": { "h3": {"class": "card__title", "descripcion": "Papas Flash"}, "p": {"class": "card__sub", "descripcion": "Time for a"} } } , "reverso": {"class": "back", "contenido": { "p": { "class": "card__body", "descripcion": "Deliciosas papas fritas doradas y crujientes, sazonadas a la perfección con un toque picante que llegan a tu mesa en un abrir y cerrar de ojos. ¡Irresistiblemente sabrosas!"} } }, "url": "../assets/papas3.png" },
+    
+    { "frente": {"class": "front4", "contenido": { "h3": {"class": "card__title", "descripcion": "Teque Hulks"}, "p": {"class": "card__sub", "descripcion": "Time for a"} } } , "reverso": {"class": "back", "contenido": { "p": { "class": "card__body", "descripcion": "Crujientes palitos de masa rellenos de queso suave, perfectos para compartir. Se sirven calientes y acompañados de salsa de guasacaca"} } }, "url": "../assets/tequenios5.png" },
+    
+    { "frente": {"class": "front5", "contenido": { "h3": {"class": "card__title", "descripcion": "Teen Titans Tacos"}, "p": {"class": "card__sub", "descripcion": "Time for a"} } } , "reverso": {"class": "back", "contenido": { "p": { "class": "card__body", "descripcion": "Deliciosos tacos con carne marinada, asada a la perfección y servida en tortillas de maíz suaves. Acompañados de piña, cebolla y cilantro frescos. ¡Con una variedad de salsas locas para elegir!"} } }, "url": "../assets/tacos2.png" },
+    
+    { "frente": {"class": "front6", "contenido": { "h3": {"class": "card__title", "descripcion": "IronChili Dog"}, "p": {"class": "card__sub", "descripcion": "Time for a"} } } , "reverso": {"class": "back", "contenido": { "p": { "class": "card__body", "descripcion": "Jugosa salchicha en un pan suave, cubierta con mostaza, ketchup, cebolla picada y chili picante. ¡Un clásico favorito con un toque extravagante!"} } }, "url": "../assets/hotdogs2.png" },
+    
+    { "frente": {"class": "front7", "contenido": { "h3": {"class": "card__title", "descripcion": "Wolverine's Claws"}, "p": {"class": "card__sub", "descripcion": "Time for a"} } } , "reverso": {"class": "back", "contenido": { "p": { "class": "card__body", "descripcion": "Alitas de pollo picantes y afiladas, con una salsa BBQ intensa que hará vibrar tus sentidos!"} } }, "url": "../assets/pollo2.png" },
+    
+    { "frente": {"class": "front8", "contenido": { "h3": {"class": "card__title", "descripcion": "Mystic Nachos"}, "p": {"class": "card__sub", "descripcion": "Time for a"} } } , "reverso": {"class": "back", "contenido": { "p": { "class": "card__body", "descripcion": "Nachos con un hechizo especial de queso derretido y guacamole, que transportan tus papilas a otra dimensión."} } }, "url": "../assets/nachos3.png" },
+    
+    { "frente": {"class": "front9", "contenido": { "h3": {"class": "card__title", "descripcion": "Wonder Sandwich"}, "p": {"class": "card__sub", "descripcion": "Time for a"} } } , "reverso": {"class": "back", "contenido": { "p": { "class": "card__body", "descripcion": "Un sándwich de pollo fuerte y delicioso acompañado con una salsa a base de miel. ¡Te empodera con cada bocado!"} } }, "url": "../assets/sandwich.png"}
+    ]

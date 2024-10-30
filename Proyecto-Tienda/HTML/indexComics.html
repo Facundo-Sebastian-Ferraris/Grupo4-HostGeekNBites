@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geek&Bites-Comics</title>
+    <link rel="stylesheet" href="../CSS/styleComics.css" />
+
+    <script src="../javascript/javascriptComics.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/b0f29e9bfe.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--SECCION DE NAVEGACION-->
+    <nav id="navegador"></nav>
+    <script src="../javascript/barraNav.js"></script>
+
+
+    <section class="comics">
+      <!--Boton anterior-->
+      <button id="prev-btn">
+        <i class="fa-solid fa-arrow-left"></i>
+      </button>
+
+      <!--Libro-->
+      <div id="book" class="book">
+        <!-- Hoja 1-->
+        <div id="p1" class="paper">
+          <!--dividimos el papel en la hoja frontal-->
+          <div class="front">
+            <div id="f1" class="front-content">
+              <img src="../assets/comics/comic1.png" alt="Imagen 1" />
+            </div>
+          </div>
+          <!--dividimos el papel en la hoja posterior-->
+          <div class="back">
+            <div id="b1" class="back-content">
+              <img src="../assets/comics/comic2.png" alt="Imagen 2" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Hoja 2-->
+        <div id="p2" class="paper">
+          <!--dividimos el papel en la hoja frontal-->
+          <div class="front">
+            <div id="f2" class="front-content">
+              <img src="../assets/comics/comic3.png" alt="Imagen 3" />
+            </div>
+          </div>
+          <!--dividimos el papel en la hoja posterior-->
+          <div class="back">
+            <div id="b2" class="back-content">
+              <img src="../assets/comics/comic4.png" alt="Imagen 4" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Hoja 3-->
+        <div id="p3" class="paper">
+          <!--dividimos el papel en la hoja frontal-->
+          <div class="front">
+            <div id="f3" class="front-content">
+              <img src="../assets/comics/comic5.png" alt="Imagen 5" />
+            </div>
+          </div>
+          <!--dividimos el papel en la hoja posterior-->
+          <div class="back">
+            <div id="b3" class="back-content">
+              <img src="../assets/comics/comic6.png" alt="Imagen 6" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Botón Siguiente-->
+      <button id="next-btn">
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </section>
+  </body>
+</html>

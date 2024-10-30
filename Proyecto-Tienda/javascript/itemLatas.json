@@ -1,0 +1,13 @@
+[
+    {"class": "lata", "style": "--etiqueta: url(../assets/PerkCans/01-perk.webp);"},
+    {"class": "lata", "style": "--etiqueta: url(../assets/PerkCans/02-perk.webp);"},
+    {"class": "lata", "style": "--etiqueta: url(../assets/PerkCans/03-perk.webp);"},
+    {"class": "lata", "style": "--etiqueta: url(../assets/PerkCans/04-perk.webp);"},
+    {"class": "lata", "style": "--etiqueta: url(../assets/PerkCans/05-perk.webp);"},
+    {"class": "lata", "style": "--etiqueta: url(../assets/PerkCans/06-perk.webp);"},
+    {"class": "lata", "style": "--etiqueta: url(../assets/PerkCans/07-perk.webp);"},
+    {"class": "lata", "style": "--etiqueta: url(../assets/PerkCans/08-perk.webp);"},
+    {"class": "lata", "style": "--etiqueta: url(../assets/PerkCans/09-perk.webp);"},
+    {"class": "lata", "style": "--etiqueta: url(../assets/PerkCans/10-perk.webp);"}
+]
+  

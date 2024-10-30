@@ -1,0 +1,214 @@
+@import 'barranav.css';
+@import 'colors.css';
+@import 'latas.css';
+
+
+@font-face {
+    font-family: 'comic';
+    src: url('../assets/fonts/Rethogen Atomics.otf') format('opentype');
+}
+
+/*FONDO*/
+body {
+    background-color: var(--error);
+    background-image: url('../assets/neonRoad.gif');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    height: 100vh; /*agregado*/
+}
+
+/*Propios de la seccion*/
+
+:root{
+    --level-one: translateZ(3rem);
+    --level-two: translateZ(6rem);
+    --level-three: translateZ(9rem);
+
+    --fw-normal: 400;
+    --fw-bold: 700;
+}
+
+
+*, *::before, *::after{
+    /*box-sizing: border-box;*/
+    margin: 0;
+}
+
+.encabezado{
+    text-align: center;
+    color: white;
+    transform: translateY(5rem);
+    font-size: clamp(3rem, 5vw, 5rem);
+}
+
+.encabezado::after{
+    content: '';
+    background-color: white;
+    height: 10px;
+    width: max-content;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+
+.contenido{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: 1fr 1fr 1fr;
+
+    row-gap: 25rem; /*espacio entre las filas*/
+    column-gap:6.5rem; /*espacio entre las columnas*/
+    padding: 14.5em; /*espacio entre el borde*/
+    justify-items: center;
+}
+
+.card{
+    position: relative;
+    width: clamp(100px,400px,400px);
+}
+
+.card__content{
+    text-align: center;
+    position: relative;
+    padding: 5em;
+    transition: transform 1s;
+    background: rgb(255, 192, 192);
+    transform-style: preserve-3d;
+}
+
+.card:hover .card__content{
+    transform: rotateY(.5turn);
+}
+
+[class^="front"],
+.back{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left:0;
+    right: 0;
+    padding: 15em 3em;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    display: grid;
+    align-content: center;
+    color: white; /*de las letras tanto del front como back*/
+    text-shadow: 0 0 10px magenta;
+    box-shadow: 0 0 10px magenta;
+
+}
+
+[class^="front"] {
+    background: black;
+    background-size: cover;
+    background-blend-mode:difference; /*overlay*/
+}
+
+[class^="front"]::before{
+    content: "";
+    position: absolute;
+    --spacer: 1em;
+    top: var(--spacer);
+    bottom: var(--spacer);
+    left: var(--spacer);
+    right: var(--spacer);
+    border: 10px solid currentColor;
+    box-shadow: 0px 0 20px magenta;
+    transform:  var(--level-one);
+}
+
+
+.card__title{
+    font-size: 2.8rem;
+    transform: var(--level-three);
+    translate: 0rem 8rem;
+    order: 2;
+    text-transform: uppercase;
+    font-family: comic;
+}
+
+.card__sub{
+    transform: var(--level-two);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: .75rem;
+    font-weight: var(--fw-bold);
+    opacity: .7;
+    translate: 0rem -8rem;
+}
+
+.card__body{
+    transform: var(--level-two);
+    font-size: 1.25rem; /*1.5rem*/
+    line-height:  1.6;
+    letter-spacing: 4px;
+    font-weight: var(--fw-bold);
+}
+
+.back{
+    transform: rotateY(.5turn);
+    background: rgb(2, 3, 51);
+}
+
+.front1{
+    /*background-image: url('../assets/hamburguesa2.png');*/
+    background-position-x: -2rem;
+}
+
+.front2{
+    /*background-image: url('../assets/pizza2.png');*/
+    background-size: 25rem;
+}
+
+.front3{
+    /*background-image: url('../assets/papas3.png');*/
+    background-position-y: -3rem;
+}
+
+.front4{
+    /*background-image: url('../assets/tequenios5.png');*/
+    background-position: center;
+    background-position-y: -6rem;
+}
+
+.front5{
+    /*background-image: url('../assets/tacos2.png');*/
+    background-position: center;
+}
+
+.front7{
+    /*background-image: url('../assets/pollo2.png');*/
+    background-position-y: -2rem;
+}
+
+.front9{
+    /*background-image: url('../assets/sandwich.png');*/
+    background-position-y: -5rem;
+}
+
+.front8{
+    /*background-image: url('../assets/nachos3.png');*/
+    background-position-x: -7rem;
+    background-position-y: 3.5rem;
+    background-size: 40em;
+}
+
+h1{
+    color: rgb(58, 1, 98);
+    text-align: center;
+    margin: 15rem 0 15rem 0;
+    font-family: comic;
+    font-size: 4.5rem;
+    text-shadow: 
+        -1px -1px 0px white,
+         1px -1px 0px white,
+        -1px  1px 0px white,
+         1px  1px 0px white; /* Borde negro */
+    font-weight: 300;
+    background-color: white;
+}

@@ -1,0 +1,26 @@
+[
+    {
+        "frontClass": "front1",
+        "backgroundImage": "../assets/whatsappLogo.png",
+        "backgroundPositionX": "1rem",
+        "scale": "0.5",
+        "backContent": "¿Antojo de algo delicioso? Haz tu pedido y te lo llevamos a la puerta de tu casa. ¡Es fácil, rápido y sabroso!",
+        "boldText": "Número para Delivery: +54 291 878 8878"
+    },
+    {
+        "frontClass": "front2",
+        "backgroundImage": "../assets/logoInstagram.png",
+        "backgroundPositionX": "-6rem",
+        "scale": "0.5",
+        "backContent": "Síguenos en @GeekandBites para estar atento a nuestras novedades!",
+        "boldText": ""
+    },
+    {
+        "frontClass": "front3",
+        "backgroundImage": "../assets/maillogo.png",
+        "backgroundPositionX": "-31rem",
+        "scale": "0.5",
+        "backContent": "Si tienes pasión por la comida y ganas de trabajar en un ambiente dinámico, ¡queremos conocerte! Envía tu currículum a GeekandBites@gmail.com o acércate a nuestro local.",
+        "boldText": "¡Te necesitamos!"
+    }
+]

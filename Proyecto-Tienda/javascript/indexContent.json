@@ -1,0 +1,8 @@
+[
+    {"contenido":{"p":{"descripcion": "El único bar donde los héroes se reúnen después de una intensa jornada de salvar el multiverso (o simplemente después de una buena maratón de anime)!"},"img":{"class":"imagen_centrada", "src": "../assets/01-index-kids-eating.jpeg", "alt":"nenesJugando"}}},
+    {"contenido":{"p":{"descripcion": "Nos especializamos en comida nerd para todas las edades y gustos, con platillos que rinden homenaje a tus personajes favoritos."},"img":{"class":"imagen_centrada", "src": "../assets/02-index-food.jpeg", "alt":"comida"}}},
+    {"contenido":{"p":{"descripcion": "Ah, y claro, en Geek&Bites NO servimos bebidas alcohólicas."},"img":{"class":"imagen_centrada", "src": "../assets/01-index-zero-alcohol-drink.jpeg", "alt":"botella"}}},
+    {"contenido":{"p":{"descripcion": "Así que, si eres un amante de las historietas, los videojuegos retro, o las sagas intergalácticas, ¡este es tu lugar!"},"img":{"class":"imagen_centrada", "src": "../assets/04-index-kids-eating.jpeg", "alt":"pibes pc"}}}
+
+
+]

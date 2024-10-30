@@ -1,0 +1,66 @@
+  /* seccion importes */
+@import "colors.css";
+
+/* seccion de letras */
+@font-face {
+  font-family: "comic";
+  src: url("../assets/fonts/Rethogen Atomics.otf") format("opentype");
+}
+
+/* seccion de tags,clases,ids */
+
+nav {
+
+  height: 90px;
+  
+  /* padding */
+  padding: 10px;
+  
+  /* disposicion */
+  display: flex;
+  align-items: center; /*stretch*/
+  justify-content: space-evenly;
+  background-color: var(--paleta11);
+}
+
+.boton {
+  /* dimension */
+  width:  15vw;
+  height: 30px;
+  height: 80px;
+  border-radius: 3%;
+
+  /* margenes */
+  margin:0%;
+
+  /* disposicion */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* fuente */
+  color: var(--txt);
+  font-size:1em;
+  font-family: comic;
+  font-size: clamp(1rem, 2vw, 4rem);
+}
+
+.boton:hover{
+  background-color: var(--botonHover);
+}
+
+.logo {
+
+  /* margenes */
+  margin: 0%;
+
+  /* miscelaneo */
+  display: block;
+
+}
+
+.imagenLogo{
+  height: 80px;
+  width: auto;
+  border-radius: 50%;
+}

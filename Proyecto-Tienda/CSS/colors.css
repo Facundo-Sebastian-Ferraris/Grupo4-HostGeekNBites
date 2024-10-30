@@ -1,0 +1,17 @@
+:root{
+    --paleta1: rgba(35, 31, 32, 0);
+    --paleta11: rgba(35, 31, 32, 0.7);
+
+    --paleta2: #CEE7E6;
+
+    --paleta3: #ff0035;
+
+    --paleta4: #ff0035;
+    
+    --boton: rgb(35, 31, 32);
+    --botonHover:rgb(61, 57, 58);
+
+    --error: #ff00e1;
+    --txt:var(--paleta2)
+    
+}

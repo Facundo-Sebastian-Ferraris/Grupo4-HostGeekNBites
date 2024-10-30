@@ -1,0 +1,223 @@
+@import 'barranav.css';
+
+@import 'colors.css';
+
+body {
+    background-color: var(--error);
+    background-image: url('../assets/neonRoad.gif');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.efecto{
+    background-color: var(--paleta11);
+}
+
+
+
+
+p,h1{
+    color: var(--txt);
+}
+
+
+
+@font-face {
+    font-family: 'comic';
+    src: url('../assets/fonts/Rethogen Atomics.otf') format('opentype');
+}
+
+html {
+    font-size: clamp(10px,1vw,14px);
+}
+
+.credito {
+    margin: 0px;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 1.4rem;
+    grid-area: var(--y) / var(--x);
+}
+
+.bienvenida {
+    font-family: Helvetica;
+    font-size: 5rem;
+}
+
+p {
+    margin: 3rem;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+/*CSS PARA UBICACION DE CAJAS
+Estilos generales de estructura (grid, flexbox, contenedores, cabecera, pie de página).
+*/
+body {
+    margin: 0%;
+    overflow-x: hidden;
+}
+
+.contenedorFinal {
+    text-align: center;
+    display: grid;
+    grid-area: 2/2;
+    grid-template: clamp(100px, 20vh, 300px) clamp(100px, 20vh, 300px) clamp(100px, 20vh, 300px) clamp(100px, 20vh, 300px) / 1fr 1fr 1fr;
+    margin: 0%;
+}
+
+.credito_formato_foto {
+    border-radius: 50%;
+    height: 100%;
+}
+
+.credito_foto_contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: var(--y) / var(--x);
+    flex-direction: column;
+}
+
+.credito_Hecho {
+    grid-area: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/*CONTENEDOR PARA BARRAS LATERALES Y PRINCIPAL*/
+.contenedor {
+    display: grid;
+    grid-template: 6fr clamp(500px, 85vh, 1000px) / clamp(50px, 5vw, 100px) 1fr clamp(50px, 5vw, 100px);
+}
+
+/*Layouts Auxiliares*/
+/*Caja auxiliar para centrar entidad*/
+.centralizador {
+    text-align: center;
+    grid-area: 1/2;
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.efecto {
+    width: clamp(100px,100%,520px);
+    height: auto;
+    padding: auto;
+    
+    margin-top: clamp(100px, 20vh, 300px);
+    margin-bottom: clamp(100px, 20vh, 300px);
+    
+    display: flex;
+
+    flex-direction: column;
+}
+
+.imagen_centrada {
+    width: clamp(175px, 50vw, 450px);
+    margin-bottom: clamp(30px, 50vw, 35px);
+
+    height: auto;
+    align-self: center;
+    
+}
+
+.logoImg{
+    border-radius: 50%;
+    margin-bottom: 50vh;
+}
+
+
+/*ANIMACIONES DE MOVIMIENTO*/
+.girar, .credito_formato_foto:hover{
+    animation: giro 1s linear infinite;
+}
+
+
+.tambalear{
+    animation: tambaleo 2s linear infinite, show;
+}
+
+.efecto {
+    margin-bottom: 20%;
+
+    view-timeline-name: --reveal;
+    view-timeline-axis: block;
+    animation-timeline: --reveal;
+    animation-name: imgIn;
+    animation-range: entry 0% cover 100%;
+    animation-fill-mode: both;
+}
+
+
+
+
+@keyframes giro {
+    0%{
+        transform: rotateY(0deg);
+    }
+    50%{
+        transform: rotateY(90deg);
+    }
+    100%{
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes tambaleo {
+    0%{
+        transform: rotate(-15deg);
+    }
+    50%{
+        transform: rotate(15deg);
+    }
+    100%{
+        transform: rotate(-15deg);
+    }
+}
+
+
+@keyframes imgIn {
+    0%{
+        opacity: 0;
+        transform: scale(3);
+    }
+    40%{
+        opacity: 1;
+    }
+    55%{
+        opacity: 1;
+
+    }   
+    60%{
+        opacity: 0.5;
+    }
+    65%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+        transform:scale(0.4);
+    }
+}
