@@ -54,6 +54,9 @@
 }
 
 .producto .lata:hover{
-     --izquierda: 75%;   
      transform: scale(1.5);
+}
+
+.producto .lata:active{
+    --izquierda: 75%;   
 }
