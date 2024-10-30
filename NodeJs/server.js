@@ -73,3 +73,5 @@ app.get('/', (req, res) => { // "/" indica la raiz
 app.listen(puerto, () => {
     console.log('mucho tramite, pero finalmente aca esta el link: http://' + ip + ':' + puerto);
 });
+// luego con npm start deberias poder abrir el servidor
+// tambien con node server.js (si asi llama este archivo)
