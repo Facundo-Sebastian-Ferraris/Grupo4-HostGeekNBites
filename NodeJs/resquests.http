@@ -1,0 +1,1 @@
+ GET http://192.168.0.8:3030/api/comics HTTP/1.1

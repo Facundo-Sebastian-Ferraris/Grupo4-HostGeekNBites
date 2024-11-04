@@ -1,0 +1,54 @@
+{
+  "comics": [
+    {
+      "id": 1,
+      "nombre": "Action Comics #1",
+      "añoDePublicacion": 1938
+    },
+    {
+      "id": 2,
+      "nombre": "Detective Comics #27",
+      "añoDePublicacion": 1939
+    },
+    {
+      "id": 3,
+      "nombre": "Amazing Fantasy #15",
+      "añoDePublicacion": 1962
+    },
+    {
+      "id": 4,
+      "nombre": "The Incredible Hulk #1",
+      "añoDePublicacion": 1962
+    },
+    {
+      "id": 5,
+      "nombre": "The Avengers #1",
+      "añoDePublicacion": 1963
+    },
+    {
+      "id": 6,
+      "nombre": "X-Men #1",
+      "añoDePublicacion": 1963
+    },
+    {
+      "id": 7,
+      "nombre": "Daredevil #1",
+      "añoDePublicacion": 1964
+    },
+    {
+      "id": 8,
+      "nombre": "Green Lantern #76",
+      "añoDePublicacion": 1970
+    },
+    {
+      "id": 9,
+      "nombre": "The New Teen Titans #1",
+      "añoDePublicacion": 1980
+    },
+    {
+      "id": 10,
+      "nombre": "Batman: The Dark Knight Returns",
+      "añoDePublicacion": 1986
+    }
+  ]
+}
