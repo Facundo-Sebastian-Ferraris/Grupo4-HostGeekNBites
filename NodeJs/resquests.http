@@ -1,1 +1,35 @@
- GET http://192.168.0.8:3030/api/comics HTTP/1.1
+ //Se tienen que descargar la extensión "Rest Cliente" 
+ //y después darle click a "Send Request" para provar los endpoints
+ 
+###
+//obtener todos los comics
+GET http://192.168.0.8:3030/api/comics/todos HTTP/1.1
+
+
+ //obtener un comic especifico
+ GET http://192.168.0.8:3030/api/comics/3 HTTP/1.1
+
+###
+
+//crear un nuevo comic
+POST http://192.168.0.8:3030/api/comics HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Wonder Woman",
+    "añoDePublicacion" : 1945
+}
+
+###
+//actulizar un comic
+PUT http://192.168.0.8:3030/api/comics/act/11 HTTP/1.1
+Content-Type: application/json
+
+{
+    "añoDePublicacion" : 1978
+}
+###
+//obtener una lista de comics
+GET http://192.168.0.8:3030/api/comics?cantidad=5&inicio=5 HTTP/1.1
+
+
