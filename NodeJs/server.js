@@ -26,7 +26,7 @@ la ip ahi sera lo que esta en INET, y copiar hasta al ultimo digito que dps hay 
 por ejemplo  inet 111.11.111.111/16, solo copias 111.11.111.111 
 */
 
-const ip = "192.168.0.8";
+const ip = "10.0.15.16";
 // const ip = 'localhost';
 
 //puede ser cualquier puerto pero que sea superior a 1024, 3000 es buena opcion

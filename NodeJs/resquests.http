@@ -3,16 +3,16 @@
  
 ###
 //obtener todos los comics
-GET http://192.168.0.8:3030/api/comics/todos HTTP/1.1
+GET http://10.0.15.16:3030/api/comics/todos HTTP/1.1
 
 
  //obtener un comic especifico
- GET http://192.168.0.8:3030/api/comics/3 HTTP/1.1
+ GET http://10.0.15.16:3030/api/comics/3 HTTP/1.1
 
 ###
 
 //crear un nuevo comic
-POST http://192.168.0.8:3030/api/comics HTTP/1.1
+POST http://10.0.15.16:3030/api/comics HTTP/1.1
 Content-Type: application/json
 
 {
@@ -22,7 +22,7 @@ Content-Type: application/json
 
 ###
 //actulizar un comic
-PUT http://192.168.0.8:3030/api/comics/act/11 HTTP/1.1
+PUT http://10.0.15.16:3030/api/comics/act/11 HTTP/1.1
 Content-Type: application/json
 
 {
@@ -30,6 +30,6 @@ Content-Type: application/json
 }
 ###
 //obtener una lista de comics
-GET http://192.168.0.8:3030/api/comics?cantidad=5&inicio=5 HTTP/1.1
+GET http://10.0.15.16:3030/api/comics?cantidad=5&inicio=5 HTTP/1.1
 
 
