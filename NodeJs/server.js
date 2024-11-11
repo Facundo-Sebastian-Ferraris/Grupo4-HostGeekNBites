@@ -31,7 +31,7 @@ const ip = 'localhost';
 
 //puede ser cualquier puerto pero que sea superior a 1024, 3000 es buena opcion
 //y la mas usado cuando se aprende.
-const puerto = "3030";
+const puerto = "3000";
 
 //importamos path que otorga direcciones compaible para cualquier OS
 const path = require("path");
@@ -89,10 +89,10 @@ app.listen(puerto, () => {
 // luego con npm start deberias poder abrir el servidor
 // tambien con node server.js (si asi llama este archivo)
 
-//------------------------------------Endpoints--------------------------------------------
+//------------------------------------VINCULACION CON ROUTERS--------------------------------------------
 
-const comicsRouter = require('./comicsRouter.js');
+const routerComics = require('./routers/comicsRouter');
 
-//Endponit para el recurso de comics
-app.use('/api/comics/', comicsRouter);
+//Endpoint para el recurso de comics
+app.use('/api/comics/', routerComics);
 
