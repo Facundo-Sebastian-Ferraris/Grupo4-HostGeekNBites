@@ -27,7 +27,7 @@ por ejemplo  inet 111.11.111.111/16, solo copias 111.11.111.111
 */
 
 //const ip = "192.168.0.8";
-const ip = 'localhost';
+const ip = "localhost";
 
 //puede ser cualquier puerto pero que sea superior a 1024, 3000 es buena opcion
 //y la mas usado cuando se aprende.
@@ -91,8 +91,7 @@ app.listen(puerto, () => {
 
 //------------------------------------VINCULACION CON ROUTERS--------------------------------------------
 
-const routerComics = require('./routers/comicsRouter');
+const routerComics = require("./routers/comicsRouter");
 
 //Endpoint para el recurso de comics
-app.use('/api/comics/', routerComics);
-
+app.use("/api/comics/", routerComics);

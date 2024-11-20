@@ -16,21 +16,21 @@ POST http://localhost:3000/api/comics/ HTTP/1.1
 Content-Type: application/json
 
 {
-    "nombre": "Wonder Woman",
-    "añoDePublicacion" : 1940
+    "nombre": "Los Cuatro Fantasticos",
+    "añoDePublicacion" : 1968
 }
 
 ###
-//actulizar un comic
-PUT http://localhost:3000/api/comics/4 HTTP/1.1
+//actualizar un comic
+PUT http://localhost:3000/api/comics/5 HTTP/1.1
 Content-Type: application/json
 
 {
-    "añoDePublicacion" : 1965
+    "añoDePublicacion" : "1977"
 }
 ###
 //obtener una lista de comics
-GET http://localhost:3000/api/comics?cantidad=5&inicio=5 HTTP/1.1
+GET http://localhost:3000/api/comics/5/5 HTTP/1.1
 
 ##
 //eliminar un comic
