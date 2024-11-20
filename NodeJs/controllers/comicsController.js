@@ -6,9 +6,9 @@ const comicsServicio = require('../servicios/comicsServicio');
 
 
 const getAllComics = (req, res) => {
-    const salto = req.query.salto;  // Esto accederá al parámetro 'salto'
-    const limite = req.query.limite;  // Esto accederá al parámetro 'limite'
-    if(salto && limite){
+    if(req.query){
+        const salto = parseInt(req.query.salto);  // Esto accederá al parámetro 'salto'
+        const limite = parseInt(req.query.limite);  // Esto accederá al parámetro 'limite'
         const losComics = comicsServicio.getComicsPages(salto, limite);
         res.status(200).send({status: "OK", data: losComics});
     }else{
@@ -18,12 +18,11 @@ const getAllComics = (req, res) => {
 };
 
 const getComicsPages = (req, res) => {
-    const salto = req.query.salto;  // Esto accederá al parámetro 'salto'
-    const limite = req.query.limite;  // Esto accederá al parámetro 'limite'
-    console.long("params");
-    console.long(req.searchParams);
-    console.long(salto);
-    console.long(limite);
+    const salto = parseInt(req.query.salto);  // Esto accederá al parámetro 'salto'
+    const limite = parseInt(req.query.limite);  // Esto accederá al parámetro 'limite'
+    console.log("params");
+    console.log(`${salto}`);
+    console.log(`${limite}`);
     const losComics = comicsServicio.getComicsPages(salto, limite);
     res.status(200).send({status: "OK", data: losComics});
 };
