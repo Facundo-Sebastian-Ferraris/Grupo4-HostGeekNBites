@@ -2,11 +2,16 @@
 //Se comunica directamente con la BD
 const fs = require("fs");
 
-//const DB = require('./comics.json');
-
 const getAllComics = () =>{
     const file = readData();
     const datos = file.comics;
+    return datos;
+}
+
+const getComicsPages = (inicio, fin) =>{
+    const file = readData();
+    const datos = file.comics.slice(inicio, fin+1);
+    //const datos = file.comics.filter(comic => comic.id >= inicio && comic.id <= (inicio+fin));
     return datos;
 }
 
@@ -85,6 +90,7 @@ const readData = () => {
 
 module.exports = {
     getAllComics,
+    getComicsPages,
     getOneComic,
     createOneComic,
     deleteOneComic,

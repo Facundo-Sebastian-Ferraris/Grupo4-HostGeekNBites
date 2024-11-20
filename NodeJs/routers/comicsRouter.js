@@ -7,6 +7,8 @@ const comicsController = require('../controllers/comicsController'); //importamo
 //Definimos los distintos metodos HTTP
 routerComics
     .get("/", comicsController.getAllComics)//se obtienen todos los comics
+    
+    //.get("/?salto=a&limite=b", comicsController.getComicsPages) //se obtienen comics en un rango
 
     .get("/:id", comicsController.getOneComic)//se obtiene un comic particular
 

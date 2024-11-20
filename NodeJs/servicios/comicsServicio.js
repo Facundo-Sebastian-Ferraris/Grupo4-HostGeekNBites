@@ -8,6 +8,11 @@ const getAllComics = () =>{
     return todosLosComics;
 };
 
+const getComicsPages = (inicio, fin) =>{
+    const losComics = comic.getComicsPages(inicio, fin);
+    return losComics;
+};
+
 const getOneComic = (id) =>{
     const unComic = comic.getOneComic(id);
     return unComic;
@@ -31,6 +36,7 @@ const deleteOneComic = (id) =>{
 //exporta para que el controlador que los requiera pueda usarlos
 module.exports = {
     getAllComics,
+    getComicsPages,
     getOneComic,
     createOneComic,
     updateOneComic,

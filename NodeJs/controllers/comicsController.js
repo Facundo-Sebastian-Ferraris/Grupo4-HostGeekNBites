@@ -6,8 +6,26 @@ const comicsServicio = require('../servicios/comicsServicio');
 
 
 const getAllComics = (req, res) => {
-    const todosLosComics = comicsServicio.getAllComics();
-    res.status(200).send({status: "OK", data: todosLosComics});
+    const salto = req.query.salto;  // Esto accederá al parámetro 'salto'
+    const limite = req.query.limite;  // Esto accederá al parámetro 'limite'
+    if(salto && limite){
+        const losComics = comicsServicio.getComicsPages(salto, limite);
+        res.status(200).send({status: "OK", data: losComics});
+    }else{
+        const todosLosComics = comicsServicio.getAllComics();
+        res.status(200).send({status: "OK", data: todosLosComics});
+    }
+};
+
+const getComicsPages = (req, res) => {
+    const salto = req.query.salto;  // Esto accederá al parámetro 'salto'
+    const limite = req.query.limite;  // Esto accederá al parámetro 'limite'
+    console.long("params");
+    console.long(req.searchParams);
+    console.long(salto);
+    console.long(limite);
+    const losComics = comicsServicio.getComicsPages(salto, limite);
+    res.status(200).send({status: "OK", data: losComics});
 };
 
 const getOneComic = (req, res) => {
@@ -54,6 +72,7 @@ const deleteOneComic = (req,res) => {
 //exportamos para que el router pueda acceder a los mismos segun el metodo lanzado como solicitud
 module.exports = {
     getAllComics,
+    getComicsPages,
     getOneComic,
     createOneComic,
     updateOneComic,
