@@ -8,8 +8,6 @@ const comicsController = require("../controllers/comicsController"); //importamo
 routerComics
   .get("/", comicsController.getAllComics) //se obtienen todos los comics
 
-  //.get("/?salto=a&limite=b", comicsController.getComicsPages) //se obtienen comics en un rango
-
   .get("/:id", comicsController.getOneComic) //se obtiene un comic particular
 
   .post("/", comicsController.createOneComic) //crea un comic

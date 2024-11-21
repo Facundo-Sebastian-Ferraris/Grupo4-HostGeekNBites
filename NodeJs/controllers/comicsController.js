@@ -9,22 +9,15 @@ const getAllComics = (req, res) => {
   const limite = req.query.limite; // Esto accederá al parámetro 'limite'
   if (salto && limite) {
     const losComics = comicsServicio.getComicsPages(salto, limite);
-    res.status(200).send({ status: "OK", data: losComics });
+    if(!losComics){
+        res.status(404).send({status: "Paginacion incorrecta"});
+    }else{
+        res.status(200).send({ status: "OK", data: losComics });
+    }
   } else {
     const todosLosComics = comicsServicio.getAllComics();
     res.status(200).send({ status: "OK", data: todosLosComics });
   }
-};
-
-const getComicsPages = (req, res) => {
-  const salto = req.query.salto; // Esto accederá al parámetro 'salto'
-  const limite = req.query.limite; // Esto accederá al parámetro 'limite'
-  console.long("params");
-  console.long(req.searchParams);
-  console.long(salto);
-  console.long(limite);
-  const losComics = comicsServicio.getComicsPages(salto, limite);
-  res.status(200).send({ status: "OK", data: losComics });
 };
 
 const getOneComic = (req, res) => {
