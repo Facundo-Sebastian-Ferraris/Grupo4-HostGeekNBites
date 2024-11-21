@@ -12,7 +12,6 @@ const getComicsPages = (inicio, fin) => {
   const file = readData();
   const datos = file.comics;
   const resul = datos.slice(inicio, inicio + fin);
-  console.log(resul);
   return resul;
 };
 
