@@ -1,0 +1,18 @@
+{"comidas": [
+    {
+        "id":1,
+        "nombre":"Comida 1",
+        "Precio":1938
+    },
+    {
+        "id":2,
+        "nombre":"COmida 2",
+        "Precio":1939
+    },
+    {
+        "id":3,
+        "nombre":"Comida 3",
+        "Precio":1962
+    }
+    ]
+}
