@@ -51,7 +51,7 @@ if (!fs.existsSync(staticPath)) {
   console.error("Che cap@, me diste una ruta inexistente:", staticPath);
   process.exit(1);
 } else {
-  console.log("alfin, tanto te costo darme la ruta buena?");
+  console.log("ruta encontrada exitosamente");
 }
 
 // asignamos la direccion del index
@@ -65,7 +65,7 @@ if (!fs.existsSync(indexPath)) {
   );
   process.exit(1);
 } else {
-  console.log("vamaaah bien ahi, el index funcaaaaaa");
+  console.log("index encontrado y funcionando");
 }
 
 // agregamos al servidor la ruta del proyecto
